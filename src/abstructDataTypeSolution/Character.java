@@ -2,7 +2,7 @@ package abstructDataTypeSolution;
 
 import java.util.ArrayList;
 
-public class Character { 
+public class Character  { 
     private ArrayList<String> lines=null;
     private ArrayList<String> ignore_words=null;
     

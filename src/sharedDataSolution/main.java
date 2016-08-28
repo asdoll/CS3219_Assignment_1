@@ -113,6 +113,7 @@ public class main {
         String line=null;
         for(int i=0;i<alphabetized.length;i++){
         		line=getStrFromAlphabetizedMatrix(i);
+        		line = Character.toUpperCase(line.charAt(0))+line.substring(1);
         		System.out.println(line);
         		buffer.write(line+'\n');
         }
@@ -222,6 +223,6 @@ public class main {
     
     
     private static int char_compare(int index1,int index2){
-        return main.getStrFromAlphabetizedMatrix(index1).compareTo(main.getStrFromAlphabetizedMatrix(index2));
+        return main.getStrFromAlphabetizedMatrix(index1).toUpperCase().compareTo(main.getStrFromAlphabetizedMatrix(index2).toUpperCase());
     }
 }
